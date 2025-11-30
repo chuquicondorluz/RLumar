@@ -1,0 +1,46 @@
+/* ===== Estilo cálido RLUMAR ===== */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f5f2;
+}
+
+/* Header cálido */
+.header-warm {
+    background: linear-gradient(to bottom, #e7d3b3, #f3e7d5);
+}
+
+/* Color marrón suave */
+.text-brown {
+    color: #8a5a3a;
+}
+
+/* Caja cálida */
+.warm-box {
+    background: #fbf7f3;
+    border-left: 5px solid #c29d7f;
+}
+
+/* Tarjetas */
+.warm-card {
+    background: #fff8f1;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.warm-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer-warm {
+    background: #c29d7f;
+    color: white;
+}
+
+/* Logo */
+.logo-img {
+    height: 50px;
+    border-radius: 5px;
+}
