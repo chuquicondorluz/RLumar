@@ -1,0 +1,158 @@
+/* ===== Estilo cálido RLUMAR (COMPLETO) ===== */
+
+/* Estilos generales */
+body {
+    font-family: "Rubik", sans-serif; 
+    font-weight: 400; 
+    font-optical-sizing: auto; 
+    font-style: normal;
+    
+    background-color: #f8f5f2; 
+    margin: 0;
+    padding: 0;
+    color: #333; 
+}
+
+/*Jerarquía Tipográfica para los títulos (h1, h2, h3) */
+h1, h2, h3 {
+    font-weight: 700; /* Hace los títulos negrita para destacar */
+    color: #8a5a3a; /* Usa el color marrón de acento */
+    margin-bottom: 0.5em; 
+}
+
+/* Estilo general de tarjeta (usado con Bootstrap) */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Header cálido */
+.header-warm {
+    background: linear-gradient(to bottom, #e7d3b3, #f3e7d5);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Color marrón suave */
+.text-brown {
+    color: #8a5a3a;
+}
+
+/* Marca dentro del header */
+.marca {
+    font-weight: bold;
+}
+
+/* Caja cálida (article) */
+.warm-box {
+    background: #fbf7f3;
+    border-left: 5px solid #c29d7f;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Tarjetas de servicios */
+.warm-card {
+    background: #fff8f1;
+    border-radius: 12px;
+    transition: 0.3s;
+    padding: 20px;
+}
+
+/* Efecto Hover para tarjetas */
+.warm-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    animation: fondoSuave 0.5s forwards; /* ANIMACIÓN 4 APLICADA */
+}
+
+/* Footer cálido*/
+.footer-warm {
+    background-color: #6b4423; /* Marrón oscuro para armonizar con el tema cálido */
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Agregado para espacio */
+}
+
+/* Logo */
+.logo-img {
+    max-height: 50px;
+    object-fit: contain; 
+} 
+/* Animación 1: Pulso de Color (Para botones) */
+@keyframes pulsoColor {
+    0% { box-shadow: 0 0 0 0 rgba(138, 90, 58, 0.7); }
+    70% { box-shadow: 0 0 0 20px rgba(138, 90, 58, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(138, 90, 58, 0); }
+}
+
+/* Animación 2: Deslizamiento hacia Arriba */
+@keyframes deslizarArriba {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Animación 3: Rotación Lenta  */
+@keyframes rotarLento {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Animación 4: Cambio de Fondo (Usada en .warm-card:hover) */
+@keyframes fondoSuave {
+    from { background-color: #fff8f1; }
+    to { background-color: #f3e7d5; }
+}
+
+/* Animación 5: Parpadeo de Opacidad (Para alertas) */
+@keyframes parpadear {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+/* Aplicación Animación 1 */
+.btn-animado {
+    animation: pulsoColor 2s infinite;
+}
+
+/* Aplicación Animación 2 */
+.anim-deslizar {
+    animation: deslizarArriba 1s ease-out forwards;
+}
+
+/* Aplicación Animación 3 */
+.icono-giratorio {
+    animation: rotarLento 10s linear infinite;
+}
+
+/* Aplicación Animación 5 */
+.alerta-parpadeo {
+    animation: parpadear 1.5s step-end infinite;
+}
+
+/* ESTILO PARA BOTÓN DE FORMULARIO (COTIZACIÓN) */
+input[type="submit"] {
+    /* 1. Apariencia de botón */
+    background-color: #8a5a3a;
+    color: white;
+    padding: 10px 25px; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    /* 2. Tipografía */
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-block; 
+    
+    /* 3. Transición para efectos suaves */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse (hover) */
+input[type="submit"]:hover {
+    background-color: #6b4423; /* Un marrón más oscuro para el hover */
+    transform: translateY(-2px); /* Pequeño efecto de levantamiento */
+}
